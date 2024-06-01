@@ -22,7 +22,7 @@ for /F "tokens=* delims=" %%a in ('Type "%File%"') do (
          ) 
 )
 
-del file >nul 2>&1 
+del modpack-url >nul 2>&1 
 echo:
 echo Downloading mods...
 curl !url! -o mods.zip 
