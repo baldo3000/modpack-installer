@@ -8,7 +8,7 @@ rd /s /q mods >nul 2>&1
 del mods.zip >nul 2>&1
 
 echo Getting download link...
-curl https://www.mediafire.com/file/c92qrxiof2m2gf9/mods.zip/file -o modpack-url >nul 2>&1
+curl --user-agent "Mozilla/4.0 (Windows; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)" https://www.mediafire.com/file/c92qrxiof2m2gf9/mods.zip/file -o modpack-url
 
 set "File=modpack-url"
 set /a count=0
